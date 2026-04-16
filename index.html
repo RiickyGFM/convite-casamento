@@ -1,0 +1,311 @@
+<!DOCTYPE html><html class="light" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&amp;family=Manrope:wght@200;400;600;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#00323d",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#1e2124",
+                        "surface-bright": "#f8f9fa",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2e3133",
+                        "inverse-primary": "#ffb597",
+                        "outline-variant": "#d1d5db",
+                        "on-tertiary-fixed-variant": "#374151",
+                        "secondary": "#14203a",
+                        "surface-dim": "#e5e7eb",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb597",
+                        "on-tertiary-fixed": "#111827",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#d1d5db",
+                        "tertiary-container": "#f3f4f6",
+                        "tertiary-fixed-dim": "#9ca3af",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#933e11",
+                        "on-secondary-fixed": "#001f24",
+                        "on-secondary-container": "#14203a",
+                        "secondary-fixed": "#a5f3fc",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e0f2f1",
+                        "surface-container": "#f3f4f6",
+                        "tertiary": "#4b5563",
+                        "secondary-fixed-dim": "#b4c9da",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#933e11",
+                        "surface-variant": "#e5e7eb",
+                        "surface": "#f8f9fa",
+                        "on-surface-variant": "#4b5563",
+                        "on-surface": "#1f2937",
+                        "on-primary-fixed-variant": "#7d2d01",
+                        "on-primary-fixed": "#360f00",
+                        "primary-container": "#b35528",
+                        "outline": "#9ca3af",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#fff3ef",
+                        "surface-container-high": "#f1f3f5",
+                        "primary-fixed": "#ffdbcd",
+                        "tertiary-fixed": "#f3f4f6",
+                        "on-background": "#1f2937",
+                        "surface-container-low": "#f9fafb",
+                        "inverse-on-surface": "#f8f9fa",
+                        "background": "#f8f9fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f8f9fa;
+            color: #1f2937;
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif', serif;
+        }
+        .bg-foliage {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOG0_fmi2qzvejbz9zpDyhDlLYV5jM4uVoUAX-7KeWoY33SJrxkZgXBSC1Dluz59pVm7vY85aKgTBhSoEkyt2V7QNvuJss-BFUKnY1oa7MSmE3KvHa6MUPrgUAoRXmqwt0O-KtmGrvvVlKmvR1YJA4P3gQ6DT7NOeoth416VxIuOqb8Zv8PRhNHGRKbzK6oYce_FhdWs_OnoyseIurZemQ4qDV-LOJIxWOxh6m-A_7mD7gigKuH2jbDWZSH0_ysB4fqMYuVtV1WY0');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.12;
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<nav class="fixed top-0 w-full z-50 bg-[#f8f9fa]/80 dark:bg-[#1f2937]/80 backdrop-blur-md border-b border-outline-variant/10">
+<div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+<span class="text-3xl font-serif tracking-tighter text-[#1f2937] dark:text-[#f8f9fa]" style="">R&amp;R</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#4b5563] dark:text-[#f8f9fa]/70 hover:text-secondary transition-colors font-['Noto_Serif'] font-light tracking-tight" href="#story" style="">Nossa História</a>
+<a class="text-[#4b5563] dark:text-[#f8f9fa]/70 hover:text-secondary transition-colors font-['Noto_Serif'] font-light tracking-tight" href="#event" style="">O Evento</a>
+<a class="text-secondary border-b border-secondary/30 pb-1 font-['Noto_Serif'] font-light tracking-tight" href="#rsvp" style="">RSVP</a>
+<a class="text-[#4b5563] dark:text-[#f8f9fa]/70 hover:text-secondary transition-colors font-['Noto_Serif'] font-light tracking-tight" href="#registry" style="">Lista</a>
+<a class="text-[#4b5563] dark:text-[#f8f9fa]/70 hover:text-secondary transition-colors font-['Noto_Serif'] font-light tracking-tight" href="#dresscode" style="">Dress Code</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label text-[0.75rem] uppercase tracking-widest hover:opacity-80 transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20" style="">RSVP Now</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col items-center justify-center pt-16 overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0 bg-foliage grayscale sepia-[0.2]"></div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<span class="font-body text-secondary tracking-[0.4em] uppercase text-xs mb-4 block" style="">Save The Date</span>
+<h1 class="text-7xl md:text-[8rem] font-headline text-on-surface leading-none tracking-tighter mb-2" style="">R&amp;R</h1>
+<p class="text-3xl md:text-5xl font-headline italic text-on-surface mb-8" style="">Rafaela &amp; Ricardo</p>
+<div class="w-12 h-[1px] bg-outline-variant mx-auto mb-8"></div>
+<h2 class="text-lg md:text-xl font-headline font-light italic leading-relaxed tracking-tight text-on-surface-variant mb-6 max-w-2xl mx-auto" style="">
+                    Nossa história é feita de momentos inesquecíveis, e o capítulo mais importante está prestes a começar. Ficaremos muito felizes em celebrar este dia tão especial com vocês!
+                </h2>
+<p class="text-lg font-body text-secondary tracking-widest" style="">11 . 10 . 2026</p>
+</div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-50">
+<span class="text-[0.6rem] uppercase tracking-widest font-body" style="">Scroll</span>
+<span class="material-symbols-outlined text-sm" style="">keyboard_arrow_down</span>
+</div>
+</section>
+<!-- The Event -->
+<section class="py-16 px-6 bg-surface-container-low" id="event">
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg shadow-2xl">
+<img class="w-full h-full object-cover grayscale-[20%]" data-alt="Elegant outdoor wedding reception setup at dusk with cool-toned lights and white floral arrangements" src="https://live.staticflickr.com/7647/27078950454_80f2081046_c.jpg" style="">
+</div>
+<div class="space-y-8">
+<div class="space-y-3">
+<span class="text-secondary font-body uppercase tracking-[0.3em] text-xs" style="">O Grande Dia</span>
+<h2 class="text-4xl font-headline leading-tight" style="">A Cerimônia</h2>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary text-2xl" style="">schedule</span>
+<div>
+<p class="font-headline text-lg mb-0.5" style="">Horário</p>
+<p class="text-on-surface-variant font-body text-sm" style="">Domingo, às 19h00</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary text-2xl" style="">location_on</span>
+<div>
+<p class="font-headline text-lg mb-0.5" style="">Local</p>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed max-w-xs" style="">
+                                    Surreal Buffet<br>
+                                    R. dos Coqueiros, 1712 - Campestre, Santo André - SP
+                                </p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-3 bg-secondary text-on-secondary px-8 py-3.5 rounded-full font-label text-[0.7rem] uppercase tracking-widest hover:opacity-90 transition-all duration-300 shadow-md shadow-secondary/20" href="https://maps.app.goo.gl/o5GD79F8BX58Xm6V7" target="_blank" style="">
+<span class="material-symbols-outlined text-sm" style="">map</span>
+                        Ver Localização
+                    </a>
+</div>
+</div>
+</section>
+<!-- Dress Code Section -->
+<section class="py-16 px-6 overflow-hidden bg-surface" id="dresscode">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="text-4xl font-headline mb-3" style="">Dress Code &amp; Inspiração</h2>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed max-w-2xl mx-auto italic" style="">
+                        Para este dia especial, solicitamos o traje <span class="font-bold" style="">Esporte Fino</span> ou <span class="font-bold" style="">Social</span>. 
+                        Sua presença e seu conforto são nossa prioridade.
+                    </p>
+</div>
+<div class="grid md:grid-cols-5 gap-8 items-center">
+<div class="md:col-span-3 space-y-8">
+<div class="bg-surface-container-low p-8 rounded-lg">
+<h3 class="text-xl font-headline mb-4" style="">Paleta de Cores do Casamento</h3>
+<p class="text-on-surface-variant font-body text-sm mb-6 leading-relaxed" style="">
+                                Escolhemos tons que refletem a sofisticação e o calor do nosso amor. Sinta-se à vontade para se inspirar em nossa paleta para sua vestimenta, embora não seja obrigatório.
+                            </p>
+<div class="flex flex-wrap gap-6 items-center justify-start md:justify-between">
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-[#933e11] shadow-lg"></div>
+<span class="text-[0.6rem] uppercase tracking-widest font-label font-semibold text-primary" style="">Terracotta</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-[#14203a] shadow-lg"></div>
+<span class="text-[0.6rem] uppercase tracking-widest font-label font-semibold text-secondary" style="">Navy Blue</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-[#1e2124] shadow-lg"></div>
+<span class="text-[0.6rem] uppercase tracking-widest font-label font-semibold" style="">Black</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-[#f8f9fa] border border-outline-variant shadow-lg"></div>
+<span class="text-[0.6rem] uppercase tracking-widest font-label font-semibold" style="">Cream</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-[#9ca3af] shadow-lg"></div>
+<span class="text-[0.6rem] uppercase tracking-widest font-label font-semibold" style="">Silver / Grey</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4 items-start p-4 border-l-2 border-secondary/30 italic text-on-surface-variant font-body bg-surface-container-low/30">
+<span class="material-symbols-outlined text-secondary text-sm" style="">info</span>
+<p class="text-[0.8rem]" style="">Sugerimos evitar o branco e tons muito claros de marfim, reservados à noiva.</p>
+</div>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] rounded-lg overflow-hidden grayscale-[30%] hover:grayscale-0 transition-all duration-700 shadow-xl">
+<img class="w-full h-full object-cover" data-alt="High-quality textured navy blue fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXBrZt1SWYpCmerLwVZd2cMT9bDlUoseSeuoGdlfXwOZQJdSTOwvJXCdvTYYZ6LyIqKLUD3af6DEl1QcpAYKGQtkplDQYxE8uXCTwJv7x0xlnIs5Xgmi89KxVvZ4LjcSggHE01wFy5zUOphVhm1gR0e6onSbW8T0wzNyQ-w_DhT4qKFkxuAe_6T3oGij-QXSdMgcY9xDuJkoZo57IctytjGQvqvy6bRGKOiGC-8ZRYAPRsqFe6jvc5FslY3EVW6nEtYq0LNOPdxTg" style="">
+</div>
+<div class="aspect-[3/4] rounded-lg overflow-hidden mt-6 grayscale-[30%] hover:grayscale-0 transition-all duration-700 shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Sophisticated black bow tie detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf1Q6eb84l4rO_l8U_wjz__dlDP9HQ167zPj_4FHHHkHRmBTxTkovSmgStS-jYRBu3ck5PjBNTR7MkAe8Z-EFNfa8du47CL0l-n7TOBdWevGf_JYnJKlKwsjMDtoBchcJePtF1rKTHmN3cnm2IDT1nw3oW91LIACB9gTS9_8M_n5YF_wROb4NMhtjk4p1F-G3nJ3wdSKUMaYRwdyuGDeKXBM9vxsfknEpUnqqRmok_MBa3EZLTiM9xkhBtqTr8cXCftkfmBVC59Ro" style="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RSVP Section -->
+<section class="py-16 px-6 bg-surface-container-high relative" id="rsvp">
+<div class="max-w-2xl mx-auto bg-surface-container-lowest p-10 md:p-14 shadow-2xl rounded-sm">
+<div class="text-center mb-8">
+<h2 class="text-4xl font-headline mb-3" style="">Confirmar Presença</h2>
+<p class="text-on-surface-variant font-body text-[0.65rem] tracking-widest uppercase" style="">Sua presença é essencial</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-1">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-secondary" style="">Nome Completo</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 px-0 font-body text-sm placeholder:text-outline/50" placeholder="Como devemos chamá-lo?" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-secondary" style="">Telefone</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-secondary transition-all py-2 px-0 font-body text-sm placeholder:text-outline/50" placeholder="(00) 00000-0000" type="tel">
+</div>
+<div class="space-y-3 pt-2">
+<label class="font-label text-[0.65rem] uppercase tracking-widest text-secondary block" style="">Você poderá comparecer?</label>
+<div class="flex flex-col sm:flex-row gap-4">
+<label class="flex items-center gap-3 cursor-pointer group" style="">
+<input class="w-4 h-4 text-secondary border-outline-variant focus:ring-secondary/20" name="attendance" type="radio">
+<span class="font-body text-xs text-on-surface group-hover:text-secondary transition-colors" style="">Com certeza, estarei lá!</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group" style="">
+<input class="w-4 h-4 text-secondary border-outline-variant focus:ring-secondary/20" name="attendance" type="radio">
+<span class="font-body text-xs text-on-surface group-hover:text-secondary transition-colors" style="">Infelizmente não poderei ir</span>
+</label>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-label text-[0.75rem] uppercase tracking-widest mt-8 hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/20" type="submit" style="">
+                        Enviar Confirmação
+                    </button>
+</form>
+</div>
+</section>
+<!-- Gift List Section -->
+<section class="py-16 px-6 bg-surface" id="registry">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl font-headline mb-6" style="">Lista de Presentes</h2>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-10 max-w-xl mx-auto" style="">
+                    Sua participação é o maior presente que poderíamos receber. Caso deseje nos presentear, escolhemos duas plataformas para sua comodidade.
+                </p>
+<div class="grid sm:grid-cols-2 gap-6">
+<a class="group flex flex-col items-center justify-center p-8 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-all duration-300 border border-transparent hover:border-outline-variant/30" href="#" style="">
+<span class="material-symbols-outlined text-3xl text-secondary mb-3 opacity-70" style="">shopping_cart</span>
+<span class="font-headline text-xl mb-1" style="">Lista Mercado Livre</span>
+<span class="text-secondary font-label text-[0.6rem] uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all" style="">Acessar Lista</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-8 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-all duration-300 border border-transparent hover:border-outline-variant/30" href="#" style="">
+<span class="material-symbols-outlined text-3xl text-secondary mb-3 opacity-70" style="">redeem</span>
+<span class="font-headline text-xl mb-1" style="">Lista Amazon</span>
+<span class="text-secondary font-label text-[0.6rem] uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all" style="">Acessar Lista</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Pix Gift Section -->
+<section class="py-16 px-6 bg-surface-container-low" id="pix-gift">
+<div class="max-w-xl mx-auto text-center">
+<h2 class="text-4xl font-headline mb-6" style="">Presente via Pix</h2>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-8 italic" style="">
+                    Escaneie o código abaixo para presentear via Pix.
+                </p>
+<div class="bg-white p-8 rounded-xl shadow-xl border border-outline-variant/20 inline-block mx-auto overflow-hidden">
+<div class="w-64 h-64 md:w-72 md:h-72 mx-auto overflow-hidden relative">
+<!-- Using object-fit and specific positioning to crop the QR code from the original image -->
+<img alt="QR Code para pagamento via Pix" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujgNjkDe5eNYa3XWUV7bAUtzH9cIrY-K7Gl-dbpGtzQzlUUaaj_zmRLivDijSlEV163wRAES-ItHDh66mar2aA3EYq7EsO1nTaa1jv7aljfrpcQFV_zOvouOT73TJRfcOdWRv4XESSh8-uFvbMI-KG6sYVeUnX8PcSa-JHtXIihvtNUXilG4uD6F3g-k9Ra47Gdk4Mdn7MJsI4Dg3wWs9qVkqk26qAUwOzjZcGLXycA0KjWh-ATcCM43odMN7USueAJKUe49bK4" style="">
+</div>
+<div class="mt-6 pt-6 border-t border-outline-variant/10">
+<p class="text-secondary font-label text-[0.65rem] uppercase tracking-[0.3em] font-bold" style="">Chave Pix (CPF/E-mail/Telefone)</p>
+<p class="text-on-surface font-body text-sm mt-2" style="">Ricardo Junqueira Malhao</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low dark:bg-[#1f2937] w-full py-12 border-t border-outline-variant/20">
+<div class="flex flex-col items-center gap-6 w-full px-8 text-center">
+<span class="text-lg font-serif italic text-secondary" style="">R&amp;R</span>
+<div class="flex gap-6">
+<a class="text-on-surface-variant dark:text-stone-400 hover:text-secondary transition-colors font-['Manrope'] uppercase tracking-widest text-[0.7rem]" href="#" style="">Instagram</a>
+<a class="text-on-surface-variant dark:text-stone-400 hover:text-secondary transition-colors font-['Manrope'] uppercase tracking-widest text-[0.7rem]" href="#" style="">Save the Date</a>
+<a class="text-on-surface-variant dark:text-stone-400 hover:text-secondary transition-colors font-['Manrope'] uppercase tracking-widest text-[0.7rem]" href="#" style="">Contact Us</a>
+</div>
+<p class="font-['Manrope'] uppercase tracking-widest text-[0.65rem] text-primary dark:text-primary" style="">Com amor, Rafaela &amp; Ricardo</p>
+</div>
+</footer>
+</body></html>
